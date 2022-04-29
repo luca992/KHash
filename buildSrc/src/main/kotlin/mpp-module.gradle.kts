@@ -54,7 +54,7 @@ kotlin {
             dependencies {
                 implementation(kotlin("test-common"))
                 implementation(kotlin("test-annotations-common"))
-                implementation("KHex:extensions:${Versions.khex}")
+                implementation("com.github.luca992.khex:extensions:${Versions.khex}")
             }
         }
 
@@ -109,7 +109,7 @@ tasks.named("dependencyUpdates", DependencyUpdatesTask::class).configure {
 System.getenv("GITHUB_REPOSITORY")?.let { githubRepo ->
     val (owner, repoName) = githubRepo.split('/').map(String::toLowerCase)
     group = "com.github.$owner.$repoName"
-    version = System.getProperty("version")
+    version = "1.1.1-nativempp"
     publishing {
         repositories {
             maven {

@@ -3,8 +3,8 @@
 dependencyResolutionManagement {
     repositories {
         maven {
-            name = "komputing/KHex GitHub Packages"
-            url = uri("https://maven.pkg.github.com/komputing/KHex")
+            name = "luca992/KHex GitHub Packages"
+            url = uri("https://maven.pkg.github.com/luca992/KHex")
             credentials {
                 username = "token"
                 // see: https://github.community/t/download-from-github-package-registry-without-authentication/14407/44
