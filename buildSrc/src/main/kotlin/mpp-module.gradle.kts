@@ -109,7 +109,7 @@ tasks.named("dependencyUpdates", DependencyUpdatesTask::class).configure {
 System.getenv("GITHUB_REPOSITORY")?.let { githubRepo ->
     val (owner, repoName) = githubRepo.split('/').map(String::toLowerCase)
     group = "com.github.$owner.$repoName"
-    version = "1.1.1-nativempp"
+    version = "1.1.3-nativempp"
     publishing {
         repositories {
             maven {
